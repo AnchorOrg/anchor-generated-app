@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "anchorApp",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.16.0"
+      }
+    ],
+    "buildTool": "gradle",
+    "cacheProvider": "redis",
+    "clientFramework": "no",
+    "creationTimestamp": 1738470129143,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entitySuffix": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.9.3",
+    "jwtSecretKey": "NDY0OGE2ZTA3ZGUzOTUyYjBmYTU0YTEzMjVhNGU2NDE3NWM3ZTBiOGZhM2RiNjZlMGExM2Y2NjE4NzllY2E4NDVmMjUyMWI2ZTJmNjhjMGQ5MmQ2M2Y5MTk1NDQ3YmYwNTIzMzMwYzRiNzljN2RmNjNjZGE2YjFmODQ3Yjg1OGE=",
+    "languages": [
+      "en",
+      "zh-cn",
+      "zh-tw",
+      "ja"
+    ],
+    "messageBroker": false,
+    "microfrontend": true,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "otherModules": [],
+    "packageName": "org.anchor",
+    "pages": [],
+    "prodDatabaseType": "mysql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "7000",
+    "serverSideOptions": [],
+    "serviceDiscoveryType": "consul",
+    "skipCheckLengthOfIdentifier": false,
+    "skipClient": true,
+    "skipFakeData": false,
+    "skipUserManagement": true,
+    "testFrameworks": [
+      "cypress",
+      "cucumber"
+    ],
+    "websocket": false,
+    "withAdminUi": false
+  }
+}
