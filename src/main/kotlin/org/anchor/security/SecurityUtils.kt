@@ -109,10 +109,12 @@ fun extractAuthorityFromClaims(claims: Map<String, Any>): List<GrantedAuthority>
 
 @Suppress("UNCHECKED_CAST")
 fun getRolesFromClaims(claims: Map<String, Any>): Collection<String> {
-    return when (val test = claims.getOrDefault(
-        "groups",
-        claims.getOrDefault("roles", claims.getOrDefault("${CLAIMS_NAMESPACE}roles", listOf<String>()))
-    )) {
+    return when (
+        val test = claims.getOrDefault(
+            "groups",
+            claims.getOrDefault("roles", claims.getOrDefault("${CLAIMS_NAMESPACE}roles", listOf<String>()))
+        )
+    ) {
         is String -> listOf(test)
         else -> test as Collection<String>
     }
